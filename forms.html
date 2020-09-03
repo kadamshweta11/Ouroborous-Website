@@ -11,7 +11,7 @@
 
 <body>
     <div class="wrapper" id="wrapper">
-        <div class="title-text">
+        <div class="title-text" id="titleText">
             <div class="title login">
                 <h1>login Form</h1>
             </div>
@@ -46,10 +46,10 @@
 
                 </form>
 
-                <form action="#" class="signup">
+                <form action="#" class="signup" id="signupForm">
                     <div id="name">
                         <div class="field">
-                            <input type="text" name="firstname" placeholder="Firstname" style="width: 24%; margin-right: 1%;">
+                            <input type="text" name="firstname" placeholder="Firstname" style="width: 24%; margin-right: 1%;" required>
                             <input type="text" name="lastname" placeholder="Lastname" style="width: 24%;">
                         </div>
 
@@ -71,22 +71,22 @@
                     </div>
 
                     <div class="field">
-                        <input class="name" type="email" name="email" placeholder="Email Address" style="width: 50%;">
+                        <input class="name" type="email" name="email" placeholder="Email Address" style="width: 50%;" required>
                     </div>
 
                     <div class="Signup-inputs">
                         <div class="field">
                             <div class="flexdisp">
-                                <input type="text" name="contryCode" placeholder="Contry code" value="+91" style="width: 10%; margin-right: 2px;">
+                                <input type="text" name="contryCode" placeholder="Contry code" value="+91" style="width: 10%; margin-right: 2px;" required>
 
-                                <input type="text" name="phone number" placeholder="Contact number" style="width: 40%;">
+                                <input type="text" name="phone number" placeholder="Contact number" style="width: 39.6%;" required>
                             </div>
 
 
-                            <input type="text" name="text" placeholder="Password" style="width: 50%;margin-bottom: 5px;">
+                            <input type="password" name="text" placeholder="Password" style="width: 50%;margin-bottom: 5px;" required>
 
 
-                            <input type="text" name="text" placeholder="Confirm Password" style="width: 50%;">
+                            <input type="password" ame="text" placeholder="Confirm Password" style="width: 50%;" required>
                         </div>
                     </div>
                     <div class="field">
@@ -101,9 +101,10 @@
         const loginForm = document.querySelector("form.login");
         var lgnForm = document.getElementById('lgin');
         var signuplnk = document.getElementById('signupLnk');
-        var signup = document.getElementById('signup');
+        var signup = document.getElementById('signupForm');
         var sldTab = document.getElementById('sldTab');
         var wrapper = document.getElementById('wrapper');
+        var titleText = document.getElementById('titleText');
         var formContainer = document.getElementById('formCntnr');
         const signupForm = document.querySelector("form.signup");
         const loginBtn = document.querySelector("label.login");
@@ -115,14 +116,19 @@
             // document.write('hi');
             //loginForm.style.marginleft = "-100%";
             lgnForm.style.marginLeft = '-100%';
-            wrapper.style.height = '80%';
+            titleText.style.marginLeft = '-100%';
+            wrapper.style.height = '750px';
+            signup.style.minHeight = '500px';
             //logintext.style.marginleft = "-100%";
         });
         loginBtn.onclick = (() => {
             // document.write('hi');
             //loginForm.style.marginleft = "0%";
             lgnForm.style.marginLeft = '0%';
-            wrapper.style.height = '66%';
+            titleText.style.marginLeft = '0%';
+            wrapper.style.minHeight = '550px';
+            wrapper.style.height = '570px';
+            formContainer.style.height = '570px';
             //logintext.style.marginleft = "0%";
         });
         signuplnk.onclick = (() => {
