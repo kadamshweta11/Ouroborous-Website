@@ -86,11 +86,11 @@
                             <input id="password" type="password" name="pass" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be minimum 8 characters containing a Uppercase, a Lowercase & a number" style="width: 50%;margin-bottom: 5px;" required>
 
 
-                            <input type="password" name="Confirmpass" placeholder="Confirm Password" style="width: 50%;" required>
+                            <input id="confpass" type="password" name="Confirmpass" placeholder="Confirm Password" style="width: 50%;" required>
                         </div>
                     </div>
                     <div class="field" style="margin-top: 150px;">
-                        <input type="submit" name="submit" value="submit" style="width: 50%;">
+                        <input id="btnSubmit" type="submit" name="submit" value="submit" style="width: 50%;">
                     </div>
                     <!-- <div class="signup-link">Already have an account?<a href="#">Login</a></div> -->
                 </form>
@@ -100,6 +100,12 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
         const loginForm = document.querySelector("form.login");
+        const signupForm = document.querySelector("form.signup");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signuplink = document.querySelector(".signup-link a");
+        const logintext = document.querySelector(".title-text .login");
+        const signuptext = document.querySelector(".title-text .signup");
         var lgnForm = document.getElementById('lgin');
         var signuplnk = document.getElementById('signupLnk');
         var signup = document.getElementById('signupForm');
@@ -107,12 +113,19 @@
         var wrapper = document.getElementById('wrapper');
         var titleText = document.getElementById('titleText');
         var formContainer = document.getElementById('formCntnr');
-        const signupForm = document.querySelector("form.signup");
-        const loginBtn = document.querySelector("label.login");
-        const signupBtn = document.querySelector("label.signup");
-        const signuplink = document.querySelector(".signup-link a");
-        const logintext = document.querySelector(".title-text .login");
-        const signuptext = document.querySelector(".title-text .signup");
+        var password = document.getElementById("password")
+        var confirm_password = document.getElementById("confpass");
+
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
         signupBtn.onclick = (() => {
             // document.write('hi');
             //loginForm.style.marginleft = "-100%";
@@ -140,6 +153,21 @@
             return false;
         });
     </script>
+
+    <!-- <script type="text/javascript">
+        $(function() {
+            $("#btnSubmit").click(function() {
+                var password = $("#password").val();
+                var confirmPassword = $("#confpass").val();
+                if (password != confirmPassword) {
+                    // alert("Passwords do not match.");
+                    confirmPassword.setCustomValidity("Passwords Don't Match");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script> -->
 
 </body>
 
