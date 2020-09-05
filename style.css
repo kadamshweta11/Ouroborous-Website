@@ -298,3 +298,11 @@ form .field input[type="submit"]:hover {
 .flexdisp .flexitem {
     display: flex;
 }
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+}

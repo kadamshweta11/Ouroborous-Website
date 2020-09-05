@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ouroboros</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -82,8 +83,7 @@
                                 <input type="text" name="phonenumber" placeholder="Contact number" style="width: 39.6%;" required>
                             </div>
 
-
-                            <input type="password" name="pass" placeholder="password" style="width: 50%;margin-bottom: 5px;">
+                            <input id="password" type="password" name="pass" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must be minimum 8 characters containing a Uppercase, a Lowercase & a number" style="width: 50%;margin-bottom: 5px;" required>
 
 
                             <input type="password" name="Confirmpass" placeholder="Confirm Password" style="width: 50%;" required>
@@ -97,6 +97,7 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script>
         const loginForm = document.querySelector("form.login");
         var lgnForm = document.getElementById('lgin');
