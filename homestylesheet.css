@@ -258,6 +258,7 @@
     background: url(https://images.unsplash.com/photo-1530645298377-82c8416d3f90?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
     background-size: cover;
     border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .our-team .team-cont #team-member-img-2 {
@@ -267,6 +268,7 @@
     background: url(https://images.unsplash.com/photo-1578743547158-503775eaad91?ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80);
     background-size: cover;
     border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .our-team .team-cont #team-member-img-3 {
@@ -276,6 +278,7 @@
     background: url(https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
     background-size: cover;
     border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .our-team .team-cont #team-member-img-4 {
@@ -285,4 +288,5 @@
     background: url(https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80);
     background-size: cover;
     border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
