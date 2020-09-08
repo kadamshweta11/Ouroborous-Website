@@ -6,53 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href=cstyle.css>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
-<div class="container">
-    <div class="contact-info">
-    <h1>Contact-Info</h1>
-   
-    <i class="fa fa-map-marker" aria-hidden="true">Place &nbsp; &nbsp;</i>
-    <span>Online Community<br>The-Ouroboros</span><br>
-    <i class="fa fa-envelope" aria-hidden="true">Email &nbsp; &nbsp;</i>
-    <span>Ouroboros@gmail.com</span><br>
-    <i class="fa fa-phone" aria-hidden="true">Contact &nbsp; &nbsp;</i>
-    <span>1234567890</span>
-    <div class="social">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-telegram" aria-hidden="true"></i>
-    </div>
-    </div>
-    <div class="contact">
-        <h1 class="heading">Send Message</h1>
-        <form action="contact.php" method="post" id="contactus">
-            <span class="inputbox">
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contact-Info</h1>
+
+            <i class="fa fa-map-marker" aria-hidden="true"> Place - &nbsp; &nbsp;</i>
+            <span>Online Community<br>The-Ouroboros</span><br>
+            <i class="fa fa-envelope" aria-hidden="true"> Email - </i>
+            <span>Ouroboros@gmail.com</span><br>
+            <i class="fa fa-phone" aria-hidden="true"> Contact - &nbsp; &nbsp;</i>
+            <span>1234567890</span>
+            <div class="social">
+                <div class="scoial-icons">
+                    <a href="#"><img src="https://i.ibb.co/4J1ZN25/icons8-facebook-48.png" /></a>
+                </div>
+                <div class="scoial-icons">
+                    <a href="#"><img src="https://i.ibb.co/zr9Bqsj/icons8-instagram-48.png" /></a>
+                </div>
+                <div class="scoial-icons">
+                    <a href="#"><img src="https://i.ibb.co/YBn8DvZ/icons8-telegram-app-48.png" /></a>
+                </div>
+                <div class="scoial-icons">
+                    <a href="#"><img src="https://i.ibb.co/Hq1dNpp/icons8-twitter-48.png" /></a>
+                </div>
+                <!-- <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-telegram" aria-hidden="true"></i> -->
+            </div>
+
+        </div>
+        <div class="contact">
+            <h1 class="heading">Send Message</h1>
+            <form action="contact.php" method="post" id="contactus">
+                <span class="inputbox">
                 <input type="text" name="name" required>
                 <span class="inputname">Firstname</span>
-            </span>
-            <span class="inputbox">
+                </span>
+                <span class="inputbox">
                 <input type="text" name="name"  required>
                 <span class="inputname">Lastname</span>
-            </span>
-            <span class="inputbox">
+                </span>
+                <span class="inputbox">
                 <input type="text" name="email"  required>
                 <span class="inputname">Email Address</span>
-            </span>
-            <span class="inputbox">
+                </span>
+                <span class="inputbox">
                 <input type="text" required>
                 <span class="inputname">Contact Number</span>
-            </span>
-            <span class="inputbox">
+                </span>
+                <span class="inputbox">
                 <textarea name="message" id="" cols="30" rows="3" required></textarea>
                 <span class="textname">Write your Message</span>
-            </span><br>
-            <input type="submit" name="submit"  class="submit">
-        </form>
+                </span><br>
+                <input type="submit" name="submit" class="submit">
+            </form>
+        </div>
     </div>
-</div>
     <!-- <h2>Contact us</h2>
 	<form action="contact.php" method="post" id="contactus">
     <div>
@@ -74,4 +88,5 @@
     </div>
 </form> -->
 </body>
+
 </html>
